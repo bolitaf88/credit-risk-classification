@@ -2,39 +2,26 @@
 Module 20 Challenge
 
 
-# Lending Data Analysis and Logistic Regression Model
+### Loan Decision System Model Analysis Summary
 
-## Overview
-This repository contains code for analyzing lending data and implementing logistic regression models to predict loan statuses. The code leverages Python and several libraries, including pandas, scikit-learn, and imbalanced-learn.
+**Overview of Analysis:**
+The analysis aimed to evaluate a loan decision system used by a bank to categorize loans as healthy (0) or unhealthy (1), focusing on minimizing false positives and false negatives.
 
-## Instructions
+**The Results:**
+- *Original Model:* Achieved 100% accuracy for healthy loans (0) and 87% for unhealthy loans (1). Emphasized precision to identify risky loans.
+- *Resampled Model Enhancement:* Showed improved precision and recall for both healthy and unhealthy loans, favoring the resampled data model.
+- *F1 Score & Accuracy:* Resampled model displayed higher F1 scores and significantly outperformed with an accuracy score of 0.9936.
 
-### Step 1: Data Setup
-1. **Data Source**: Ensure that the `lending_data.csv` file is placed in the `Resources` folder.
-2. **Libraries**: Install the necessary Python libraries listed in `requirements.txt` using `pip install -r requirements.txt`.
+**Recommendation:**
+- **Resampled Data Model:** Strongly recommend implementation due to enhanced prediction of unhealthy loans and balanced approach in evaluating healthy loans.
+- **Importance of Predicting "1"s:** Vital for risk mitigation; avoiding bad loans is crucial for financial stability.
+- **Balancing Loan Approvals:** Accurate assessment of healthy loans is imperative; denying loans to reliable borrowers impacts business opportunities.
 
-### Step 2: Data Analysis
-1. **Data Loading**: Use Pandas to read the lending data from `lending_data.csv`.
-2. **Data Exploration**: Examine the dataset, review the columns, and check for any missing values.
+**Summary:**
+The resampled data model not only excelled in predicting unhealthy loans but also maintained high accuracy in evaluating healthy loans, making it a reliable choice for the bank's loan decision system.
 
-### Step 3: Model Training
-1. **Splitting Data**: Split the data into training and testing datasets using `train_test_split`.
-2. **Logistic Regression Model**: Implement a logistic regression model with the original data.
-
-### Step 4: Resampling Data
-1. **Resampling**: Utilize `RandomOverSampler` from `imbalanced-learn` to balance the labels.
-2. **Logistic Regression with Resampled Data**: Train a logistic regression model using the resampled data.
-
-### Step 5: Evaluation Metrics
-1. **Balanced Accuracy**: Assess the model's performance using balanced accuracy scores.
-2. **Confusion Matrix**: Generate a confusion matrix to visualize model predictions.
-3. **Classification Report**: View precision, recall, and F1-score for each class.
-
-## Usage
-- Ensure Python 3.x and required libraries are installed.
-- Run the code cells in the Jupyter Notebook or execute the Python script to replicate the analysis and model training.
-- Modify paths or filenames as needed to match your file structure.
-- Adjust model hyperparameters or try different classifiers for experimentation.
+## N/B 
+I haven't attained expert level in credit risk analysis, but I'm dedicated to exploring and understanding the most effective models for this field. I'm continuously learning about new technologies that can enhance credit analysis and am open to gaining more expertise in determining the best tools for analysis in this area.
 
 ## Credits
 - **Justin Bisal** - TA
