@@ -20,7 +20,7 @@ The analysis aimed to evaluate a loan decision system used by a bank to categori
 **Summary:**
 The resampled data model not only excelled in predicting unhealthy loans but also maintained high accuracy in evaluating healthy loans, making it a reliable choice for the bank's loan decision system.
 
-## N/B 
+#### N/B 
 I haven't attained expert level in credit risk analysis, but I'm dedicated to exploring and understanding the most effective models for this field. I'm continuously learning about new technologies that can enhance credit analysis and am open to gaining more expertise in determining the best tools for analysis in this area.
 
 ## Credits
